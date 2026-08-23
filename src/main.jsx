@@ -3,10 +3,10 @@ import {createRoot} from "react-dom/client";
 import "./styles.css";
 
 
-const experience=[
-  ["Samsung Electro-Mechanics","Frontend Engineer","Aug 2023 — Present"],
-  ["Samsung Electro-Mechanics","UI/UX Developer Intern","Feb 2023 — Aug 2023"],
-  ["Chegg","Chegg Expert","Apr 2022 — Jan 2023"]
+const experience = [
+  { company: "Samsung Electro-Mechanics", role: "Frontend Engineer", date: "Aug 2023 — Present" },
+  { company: "Samsung Electro-Mechanics", role: "UI/UX Developer Intern", date: "Feb 2023 — Aug 2023" },
+  { company: "Chegg", role: "Chegg Expert", date: "Apr 2022 — Jan 2023" }
 ];
 
 function App(){
@@ -21,7 +21,7 @@ function App(){
        <h4 className="!mb-2" style={{marginBottom:'10px'}}>Althaf Shaik</h4>
        <span style={{color:'#292929ad'}}>Software Engineer (Frontend)</span>
       </div>
-        <img  src={`${import.meta.env.BASE_URL}visual.png`}alt="" height={160} className="rounded" style={{
+        <img  src={`${import.meta.env.BASE_URL}visual.png`}alt="" height={160} className="rounded portrait" style={{
           borderRadius:'100%',
           border: '1px solid #ccc',}}/>
       {/* <div className="avatar">AS</div> */}
@@ -34,19 +34,24 @@ function App(){
       <p>I enjoy turning complex requirements into clean, responsive interfaces and working across UI components, REST APIs, application data flows and frontend deployment.</p>
       <p>Currently, I'm working as a Frontend Engineer <span style={{fontWeight:'500'}}>@ Samsung Electro-Mechanics.</span></p>
     </div>
-    <div className="reach reveal reveal-5">
+    <p className="reach reveal reveal-5 bio" style={{color:'#444444'}}>
       You can reach me at althaf.sh658@gmail.com
-    </div>
+    </p>
 
    </section>
 
    <section id="experience" className="block section-reveal">
     <div className="label">EXPERIENCE</div>
-    {experience.map(([company,role,date], index)=><div className={`exp row-reveal row-${index+1}`} key={company+role}>
-      <div className="company">{company}</div>
-      <div className="role">{role}</div>
-      <div className="date">{date}</div>
-    </div>)}
+  {experience.map(({ company, role, date }, index) => (
+  <div
+    className={`exp row-reveal row-${index + 1}`}
+    key={`${company}-${role}`}
+  >
+    <div className="company">{company}</div>
+    <div className="role">{role}</div>
+    <div className="date">{date}</div>
+  </div>
+))}
    </section>
 
    <section id="skills" className="block section-reveal">
