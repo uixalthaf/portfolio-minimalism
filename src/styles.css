@@ -98,7 +98,7 @@
    flex-direction: column-reverse;}
   .identity h1{font-size:28px}
   .portrait{width:54px;height:54px;flex-basis:54px}
-  .bio p{font-size:14px}
+  .bio p,.reveal-5{font-size:14px}
   .skills{overflow-wrap:anywhere}
   .links{gap:14px}
   .identity h4{
