@@ -65,7 +65,7 @@ function App(){
     <div className="links">
        <a href="mailto:althaf.sh658@gmail.com">Email </a>
        <a href="https://linkedin.com/in/althaf-shaik-658138229/" target="_blank" rel="noreferrer">LinkedIn </a>
-       <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+       <a href="https://github.com/uixalthaf/" target="_blank" rel="noreferrer">GitHub</a>
      </div>
    </section>
   </main>
