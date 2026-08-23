@@ -8,6 +8,11 @@
   font-optical-sizing: auto;
 
 }
+  .exp{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
 
 /* --- Soft page-load motion --- */
 .page-load .reveal{
@@ -112,11 +117,7 @@ padding: 20px 0px;
     padding-bottom: 30px;
     padding-top:30px !important;
   }
-  .exp{
-    display: flex !important;
-    flex-direction: column;
-    gap:10px;
-  }
+
 }
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
