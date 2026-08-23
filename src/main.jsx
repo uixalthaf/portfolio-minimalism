@@ -56,9 +56,9 @@ function App(){
 
    <section id="skills" className="block section-reveal">
     <div className="label">SKILLS</div>
-    <p className="skills">React.js, JavaScript, TypeScript, HTML, CSS,
-Tailwind CSS, React Router, REST APIs,
-Swagger / OpenAPI, Git, Vite, IIS</p>
+    <p className="skills">React.js, JavaScript, TypeScript, HTML, CSS , JQuery , Python , Tailwind CSS,
+React Router, REST APIs, Swagger / OpenAPI, Git, Vite, IIS,
+Material UI, Bootstrap, Sass, WebSocket, Figma</p>
    </section>
 
    <section id="contact" className="block contact section-reveal">
