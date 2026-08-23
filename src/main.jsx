@@ -21,7 +21,7 @@ function App(){
        <h4 className="!mb-2" style={{marginBottom:'10px'}}>Althaf Shaik</h4>
        <span style={{color:'#292929ad'}}>Software Engineer (Frontend)</span>
       </div>
-        <img src="../public/visual.png" alt="" height={160} className="rounded" style={{
+        <img  src={`${import.meta.env.BASE_URL}visual.png`}alt="" height={160} className="rounded" style={{
           borderRadius:'100%',
           border: '1px solid #ccc',}}/>
       {/* <div className="avatar">AS</div> */}
