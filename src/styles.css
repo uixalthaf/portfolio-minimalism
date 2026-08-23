@@ -110,6 +110,7 @@ padding: 20px 0px;
   }
   .hero {
     padding-bottom: 30px;
+    padding-top:30px !important;
   }
 }
 @media (prefers-reduced-motion: reduce){
