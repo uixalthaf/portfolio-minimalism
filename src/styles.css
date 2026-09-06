@@ -122,3 +122,12 @@ padding: 20px 0px;
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
 }
+.article-title{
+  font-size:14px;
+  font-weight:500;
+  color:var(--ink);
+  transition:color .2s ease;
+}
+.exp:hover .article-title{
+  color:#3a5a78;
+}

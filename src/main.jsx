@@ -9,6 +9,37 @@ const experience = [
   { company: "Chegg", role: "Chegg Expert", date: "Apr 2022 — Jan 2023" }
 ];
 
+const articles = [
+  {
+    title: "The call stack isn't scary — here's what's actually happening when your code runs",
+    url: "https://uixalthaf.github.io/execution-context-theory/"
+  },
+  {
+    title: "Responsive web design, and why your site keeps breaking on mobile",
+    url: "https://uixalthaf.github.io/responsive-design-page/demo_page.html"
+  }
+];
+
+// Shared row used by both Experience and Articles, so the reveal-animation
+// classes and row structure live in one place instead of two copies.
+function Row({ index, href, children }) {
+  const className = `exp row-reveal row-${index + 1} !p-1`;
+  if (href) {
+    return (
+      <a
+        className={className}
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        style={{ textDecoration: "none" }}
+      >
+        {children}
+      </a>
+    );
+  }
+  return <div className={className}>{children}</div>;
+}
+
 function App(){
  return <div className="page page-load">
 
@@ -43,14 +74,20 @@ function App(){
    <section id="experience" className="block section-reveal">
     <div className="label">EXPERIENCE</div>
   {experience.map(({ company, role, date }, index) => (
-  <div
-    className={`exp row-reveal row-${index + 1}`}
-    key={`${company}-${role}`}
-  >
+  <Row index={index} key={`${company}-${role}`}>
     <div className="company">{company}</div>
     <div className="role">{role}</div>
     <div className="date">{date}</div>
-  </div>
+  </Row>
+))}
+   </section>
+
+   <section id="articles" className="block section-reveal">
+    <div className="label">ARTICLES</div>
+  {articles.map(({ title, url }, index) => (
+  <Row index={index} href={url} key={title}>
+    <div className="article-title">{title}</div>
+  </Row>
 ))}
    </section>
 
