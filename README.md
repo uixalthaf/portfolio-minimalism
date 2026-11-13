@@ -1,34 +1,19 @@
-# Althaf Shaik — Frontend Portfolio
+# Althaf Shaik — Portfolio source
 
-A modern React/Vite portfolio for Althaf Shaik, Frontend Engineer.
+This update preserves the original minimal single-column layout.
 
-## Run locally
+## Updates
+- Experience entries now show a company mark, company name, role beneath it, date and a short description.
+- Samsung Electro-Mechanics uses a local SVG lockup based on the official blue Samsung oval and Electro-Mechanics wordmark; it does not depend on an externally hosted image.
+- Removed decorative arrow icons from article and project links.
+- Improved spacing and mobile alignment for experience entries.
 
+## Run
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+Keep the existing Vite configuration, dependencies and `public/visual.png`.
 
-```bash
-npm run build
-```
-
-The production files will be generated in `dist/`.
-
-## Before publishing
-
-1. Replace the GitHub placeholder link in `src/main.jsx`.
-2. Add the real portfolio project links when available.
-3. Add a downloadable resume if desired.
-4. Review every experience bullet for confidentiality and accuracy.
-5. Deploy the `dist/` output to your preferred host.
-
-## Stack
-
-- React
-- Vite
-- JavaScript
-- CSS
-- Lucide React
+The Samsung SVG is stored at `public/samsung-electro-mechanics.svg`. It is a locally recreated vector lockup based on the company branding, not a downloaded official logo file.
