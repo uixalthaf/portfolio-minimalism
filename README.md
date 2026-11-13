@@ -25,4 +25,3 @@ npm run dev
 - `public/visual.png` — Portfolio visual asset.
 - `public/samsung-electro-mechanics.svg` — Locally recreated Samsung Electro-Mechanics vector lockup.
 
-**Note:** The Samsung SVG is a locally recreated vector asset based on the company's branding, not an officially downloaded logo file.
