@@ -1,19 +1,28 @@
-# Althaf Shaik — Portfolio source
+# Althaf Shaik — Portfolio
 
-This update preserves the original minimal single-column layout.
+A personal portfolio website showcasing my professional experience, selected projects, and frontend development work.
 
-## Updates
-- Experience entries now show a company mark, company name, role beneath it, date and a short description.
-- Samsung Electro-Mechanics uses a local SVG lockup based on the official blue Samsung oval and Electro-Mechanics wordmark; it does not depend on an externally hosted image.
-- Removed decorative arrow icons from article and project links.
-- Improved spacing and mobile alignment for experience entries.
+## Tech Stack
+- React
+- Vite
+- CSS
 
-## Run
+## Getting Started
+
+Install dependencies:
+
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Keep the existing Vite configuration, dependencies and `public/visual.png`.
+## Assets
+- `public/visual.png` — Portfolio visual asset.
+- `public/samsung-electro-mechanics.svg` — Locally recreated Samsung Electro-Mechanics vector lockup.
 
-The Samsung SVG is stored at `public/samsung-electro-mechanics.svg`. It is a locally recreated vector lockup based on the company branding, not a downloaded official logo file.
+**Note:** The Samsung SVG is a locally recreated vector asset based on the company's branding, not an officially downloaded logo file.
